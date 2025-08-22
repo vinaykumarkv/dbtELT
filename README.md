@@ -5,8 +5,6 @@ This is an ETL (Extract, Transform, Load) portfolio project demonstrating data t
 
 ## Project Structure
 - models/: Contains dbt models (e.g., marketing/total_creditcard_riders_by_day.sql).
-- seeds/: Stores seed data (e.g., taxi_rides_raw.csv).
-- tests/: Defines data quality tests (e.g., not_null, accepted_range).
 - dbt_project.yml: Configures the dbt project.
 - profiles.yml: Stores database connection details.
 - packages.yml: Lists dependencies (e.g., dbt-utils).
