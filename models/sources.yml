@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: my_etl_db
+    schema: public
+    tables:
+      - name: taxi_rides_raw

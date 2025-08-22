@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: total_creditcard_riders_by_day
+    description: "Daily count of taxi rides paid by credit card, based on taxi_rides_raw."
+    columns:
+      - name: day
+        description: "The date of the taxi rides (YYYY-MM-DD)."
+        tests:
+          - not_null
+          - unique
+      - name: total_cc_riders
+        description: "Total number of rides paid by credit card on the given day."
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
